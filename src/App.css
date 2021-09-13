@@ -1,0 +1,13 @@
+body {
+  box-sizing: border-box;
+}
+
+.labels {
+  display: block;
+  width: 200px;
+}
+
+input {
+  background-color: #faf2fa;
+  width: 200px;
+}

@@ -1,7 +1,20 @@
 import React from "react";
-import Produto from "./Produtos";
+import Produto from "./Produto";
+import { GlobalStorage } from "./GlobalStorage";
 
-function App() {
+const App = () => {
+  return (
+    <GlobalStorage>
+      <Produto />
+    </GlobalStorage>
+  );
+};
+
+export default App;
+
+//Prática 2
+/**
+  function App() {
   const [produto, setProduto] = React.useState(null);
 
   React.useEffect(() => {
@@ -44,9 +57,9 @@ function App() {
     </div>
   );
 }
+ */
 
-export default App;
-
+//Prática 1
 /**
  * const [carregando, setCarregando] = React.useState(false);
   const [dados, setDados] = React.useState(null);

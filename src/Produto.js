@@ -1,4 +1,29 @@
 import React from "react";
+import { GlobalContext } from "./GlobalStorage";
+function Produto() {
+  const global = React.useContext(GlobalContext);
+  console.log(global);
+  if (global.produto === null) return <p>Tem nada</p>;
+
+  const handleClick = () => {
+    global.limparDados();
+  };
+  return (
+    <div>
+      <p>Produto: </p>
+      <button onClick={handleClick}>limpar</button>
+      {global.produto.map((produto) => (
+        <li key={produto.id}> {produto.nome}</li>
+      ))}
+    </div>
+  );
+}
+
+export default Produto;
+
+//Prática 2
+
+/**import React from "react";
 
 function Produto({ produto }) {
   const [dados, setDados] = React.useState(null);
@@ -23,3 +48,4 @@ function Produto({ produto }) {
 }
 
 export default Produto;
+ */

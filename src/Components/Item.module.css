@@ -1,0 +1,10 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.preco {
+  padding: 10px;
+  background-color: rgba(128, 255, 0, 0.788);
+  border-radius: 10px;
+}

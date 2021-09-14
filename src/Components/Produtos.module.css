@@ -1,0 +1,20 @@
+.produtos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+  animation: animeLeft 0.3s forwards;
+}
+
+img {
+  border-radius: 10px;
+}
+@keyframes animeLeft {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

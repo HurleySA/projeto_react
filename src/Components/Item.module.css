@@ -8,3 +8,24 @@ img {
   background-color: rgba(128, 255, 0, 0.788);
   border-radius: 10px;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 2em;
+}
+
+.containerImgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+.containerDesc h1 {
+  font-size: 2em;
+}
+
+.descricao {
+  font-size: 1.2em;
+}

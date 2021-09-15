@@ -15,14 +15,17 @@ const Item = () => {
   return (
     <section className={styles.item + "animeLeft"}>
       <Head title={dados.id} />
-      {dados.fotos.map((foto) => (
-        <img src={foto.src} alt={foto.titulo} key={foto.src} />
-      ))}
-
-      <div>
-        <h1>{dados.nome}</h1>
-        <span className={styles.preco}>R$ {dados.preco}</span>
-        <p className={styles.descricao}>{dados.descricao}</p>
+      <div className={styles.container}>
+        <div className={styles.containerImgs}>
+          {dados.fotos.map((foto) => (
+            <img src={foto.src} alt={foto.titulo} key={foto.src} />
+          ))}
+        </div>
+        <div className={styles.containerDesc}>
+          <h1>{dados.nome}</h1>
+          <span className={styles.preco}>R$ {dados.preco}</span>
+          <p className={styles.descricao}>{dados.descricao}</p>
+        </div>
       </div>
     </section>
   );
